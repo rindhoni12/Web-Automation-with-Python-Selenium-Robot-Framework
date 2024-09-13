@@ -1,0 +1,21 @@
+1721033764412	geckodriver	INFO	Listening on 127.0.0.1:50482
+1721033767805	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50483" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Rindhoni\\AppData\\Local\\Temp\\rust_mozprofileSnXG6R"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1721033770461	Marionette	INFO	Marionette enabled
+1721033771110	Marionette	INFO	Listening on port 50507
+WebDriver BiDi listening on ws://127.0.0.1:50483
+Read port: 50507
+1721033772016	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50483/devtools/browser/c87f337e-4cfb-40d5-b909-e0d160cb46be
+JavaScript warning: https://cdn.insurads.com/bootstrap/S9H7OMZB.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6880533263535234, line 96: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/kxPgh47cfpp8l6shWAH2c7R6RmFu5BOgnUVPNSr491M.js line 2 > eval line 5574 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/kxPgh47cfpp8l6shWAH2c7R6RmFu5BOgnUVPNSr491M.js line 2 > eval line 7678 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1721033800485	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/kxPgh47cfpp8l6shWAH2c7R6RmFu5BOgnUVPNSr491M.js line 2 > eval line 7554 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

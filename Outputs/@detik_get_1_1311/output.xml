@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-07-15T15:58:49.028353" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\BELAJAR AUTOMATION\web-automation\Tests">
+<suite id="s1-s1" name="Detikcom" source="D:\BELAJAR AUTOMATION\web-automation\Tests\detikcom.robot">
+<test id="s1-s1-t1" name="Scenario: Verify user able to login to admin dashboard" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-15T15:58:49.376141" level="INFO">Opening browser 'chrome' to base url 'https://www.detik.com'.</msg>
+<msg time="2024-07-15T15:58:50.075648" level="WARN">The chromedriver version (121.0.6167.184) detected in PATH at C:\Python312\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.131); currently, chromedriver 122.0.6261.128 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${DETIK_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-15T15:58:49.376141" elapsed="10.624595"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-15T15:59:00.000736" elapsed="0.677883"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-15T15:59:05.680404" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-15T15:59:00.678619" elapsed="5.001785"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-15T15:59:07.724890" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-15T15:59:07.724890" level="FAIL">InvalidSelectorException: Message: invalid selector: The result of the xpath expression "/html/body/div[9]/div/div[1]/div/div/article[1]/div/div[2]/h2/a/text()" is: [object Text]. It should be an element.
+  (Session info: chrome=122.0.6261.131); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A6507012+3522402]
+	(No symbol) [0x00007FF6A6128352]
+	(No symbol) [0x00007FF6A5FD5ABB]
+	(No symbol) [0x00007FF6A5FDAD09]
+	(No symbol) [0x00007FF6A5FDD110]
+	(No symbol) [0x00007FF6A5FDD1D0]
+	(No symbol) [0x00007FF6A601BB7C]
+	(No symbol) [0x00007FF6A601C08C]
+	(No symbol) [0x00007FF6A605E467]
+	(No symbol) [0x00007FF6A603F09F]
+	(No symbol) [0x00007FF6A605BDA3]
+	(No symbol) [0x00007FF6A603EE03]
+	(No symbol) [0x00007FF6A600F4D4]
+	(No symbol) [0x00007FF6A60105F1]
+	GetHandleVerifier [0x00007FF6A6539B9D+3730157]
+	GetHandleVerifier [0x00007FF6A658F02D+4079485]
+	GetHandleVerifier [0x00007FF6A65875D3+4048163]
+	GetHandleVerifier [0x00007FF6A625A649+718233]
+	(No symbol) [0x00007FF6A6134A3F]
+	(No symbol) [0x00007FF6A612FA94]
+	(No symbol) [0x00007FF6A612FBC2]
+	(No symbol) [0x00007FF6A611F2E4]
+	BaseThreadInitThunk [0x00007FFF05557344+20]
+	RtlUserThreadStart [0x00007FFF06F7CC91+33]
+</msg>
+<arg>xpath:/html/body/div[9]/div/div[1]/div/div/article[1]/div/div[2]/h2/a/text()</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-07-15T15:59:05.680404" elapsed="2.051468">InvalidSelectorException: Message: invalid selector: The result of the xpath expression "/html/body/div[9]/div/div[1]/div/div/article[1]/div/div[2]/h2/a/text()" is: [object Text]. It should be an element.
+  (Session info: chrome=122.0.6261.131); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A6507012+3522402]
+	(No symbol) [0x00007FF6A6128352]
+	(No symbol) [0x00007FF6A5FD5ABB]
+	(No symbol) [0x00007FF6A5FDAD09]
+	(No symbol) [0x00007FF6A5FDD110]
+	(No symbol) [0x00007FF6A5FDD1D0]
+	(No symbol) [0x00007FF6A601BB7C]
+	(No symbol) [0x00007FF6A601C08C]
+	(No symbol) [0x00007FF6A605E467]
+	(No symbol) [0x00007FF6A603F09F]
+	(No symbol) [0x00007FF6A605BDA3]
+	(No symbol) [0x00007FF6A603EE03]
+	(No symbol) [0x00007FF6A600F4D4]
+	(No symbol) [0x00007FF6A60105F1]
+	GetHandleVerifier [0x00007FF6A6539B9D+3730157]
+	GetHandleVerifier [0x00007FF6A658F02D+4079485]
+	GetHandleVerifier [0x00007FF6A65875D3+4048163]
+	GetHandleVerifier [0x00007FF6A625A649+718233]
+	(No symbol) [0x00007FF6A6134A3F]
+	(No symbol) [0x00007FF6A612FA94]
+	(No symbol) [0x00007FF6A612FBC2]
+	(No symbol) [0x00007FF6A611F2E4]
+	BaseThreadInitThunk [0x00007FFF05557344+20]
+	RtlUserThreadStart [0x00007FFF06F7CC91+33]
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-07-15T15:59:07.731872" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath:/html/body/div[9]/div/div[1]/div/div/article[1]/div/div[2]/h2/a/text()</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-15T15:59:07.732869" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-07-15T15:59:07.732869" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-07-15T15:59:07.733866" elapsed="0.000000"/>
+</kw>
+<tag>@detik_get_1</tag>
+<status status="FAIL" start="2024-07-15T15:58:49.375147" elapsed="18.358719">InvalidSelectorException: Message: invalid selector: The result of the xpath expression "/html/body/div[9]/div/div[1]/div/div/article[1]/div/div[2]/h2/a/text()" is: [object Text]. It should be an element.
+  (Session info: chrome=122.0.6261.131); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A6507012+3522402]
+	(No symbol) [0x00007FF6A6128352]
+	(No symbol) [0x00007FF6A5FD5ABB]
+	(No symbol) [0x00007FF6A5FDAD09]
+	(No symbol) [0x00007FF6A5FDD110]
+	(No symbol) [0x00007FF6A5FDD1D0]
+	(No symbol) [0x00007FF6A601BB7C]
+	(No symbol) [0x00007FF6A601C08C]
+	(No symbol) [0x00007FF6A605E467]
+	(No symbol) [0x00007FF6A603F09F]
+	(No symbol) [0x00007FF6A605BDA3]
+	(No symbol) [0x00007FF6A603EE03]
+	(No symbol) [0x00007FF6A600F4D4]
+	(No symbol) [0x00007FF6A60105F1]
+	GetHandleVerifier [0x00007FF6A6539B9D+3730157]
+	GetHandleVerifier [0x00007FF6A658F02D+4079485]
+	GetHandleVerifier [0x00007FF6A65875D3+4048163]
+	GetHandleVerifier [0x00007FF6A625A649+718233]
+	(No symbol) [0x00007FF6A6134A3F]
+	(No symbol) [0x00007FF6A612FA94]
+	(No symbol) [0x00007FF6A612FBC2]
+	(No symbol) [0x00007FF6A611F2E4]
+	BaseThreadInitThunk [0x00007FFF05557344+20]
+	RtlUserThreadStart [0x00007FFF06F7CC91+33]
+</status>
+</test>
+<status status="FAIL" start="2024-07-15T15:58:49.078231" elapsed="18.656632"/>
+</suite>
+<status status="FAIL" start="2024-07-15T15:58:49.039322" elapsed="18.696539"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">@detik_get_1</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Detikcom">Tests.Detikcom</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-07-15T15:58:50.075648" level="WARN">The chromedriver version (121.0.6167.184) detected in PATH at C:\Python312\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.131); currently, chromedriver 122.0.6261.128 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

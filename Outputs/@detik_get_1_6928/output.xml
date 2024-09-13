@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-07-15T15:55:59.758957" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\BELAJAR AUTOMATION\web-automation\Tests">
+<suite id="s1-s1" name="Detikcom" source="D:\BELAJAR AUTOMATION\web-automation\Tests\detikcom.robot">
+<test id="s1-s1-t1" name="Scenario: Verify user able to login to admin dashboard" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-15T15:56:01.162516" level="INFO">Opening browser 'firefox' to base url 'https://www.detik.com'.</msg>
+<arg>${DETIK_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-15T15:56:01.160497" elapsed="28.701791"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-15T15:56:29.863287" elapsed="0.008975"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-15T15:56:34.874525" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-15T15:56:29.873260" elapsed="5.001265"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-15T15:56:35.445768" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-15T15:56:35.445768" level="FAIL">JavascriptException: Message: Cyclic object value
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+JavaScriptError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:463:5
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:46:11
+cloneJSON@chrome://remote/content/marionette/json.sys.mjs:203:12
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+cloneJSON@chrome://remote/content/marionette/json.sys.mjs:203:12
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+cloneJSON@chrome://remote/content/marionette/json.sys.mjs:203:12
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+cloneJSON@chrome://remote/content/marionette/json.sys.mjs:203:12
+cloneObject/result&lt;@chrome://remote/content/marionette/json.sys.mjs:53:52
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:53:25
+cloneJSON@chrome://remote/content/marionette/json.sys.mjs:203:12
+json.clone@chrome://remote/content/marionette/json.sys.mjs:208:22
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:171:19
+</msg>
+<arg>xpath:/html/body/div[9]/div/div[1]/div/div/article[1]/div/div[2]/h2/a/text()</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-07-15T15:56:34.874525" elapsed="0.701894">JavascriptException: Message: Cyclic object value
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+JavaScriptError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:463:5
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:46:11
+cloneJSON@chrome://remote/content/marionette/json.sys.mjs:203:12
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+cloneJSON@chrome://remote/content/marionette/json.sys.mjs:203:12
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+cloneJSON@chrome://remote/content/marionette/json.sys.mjs:203:12
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+cloneJSON@chrome://remote/content/marionette/json.sys.mjs:203:12
+cloneObject/result&lt;@chrome://remote/content/marionette/json.sys.mjs:53:52
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:53:25
+cloneJSON@chrome://remote/content/marionette/json.sys.mjs:203:12
+json.clone@chrome://remote/content/marionette/json.sys.mjs:208:22
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:171:19
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-07-15T15:56:35.577415" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath:/html/body/div[9]/div/div[1]/div/div/article[1]/div/div[2]/h2/a/text()</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-15T15:56:35.577415" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-07-15T15:56:35.578413" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-07-15T15:56:35.578413" elapsed="0.000000"/>
+</kw>
+<tag>@detik_get_1</tag>
+<status status="FAIL" start="2024-07-15T15:56:01.147511" elapsed="34.431900">JavascriptException: Message: Cyclic object value
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+JavaScriptError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:463:5
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:46:11
+cloneJSON@chrome://remote/content/marionette/json.sys.mjs:203:12
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+cloneJSON@chrome://remote/content/marionette/json.sys.mjs:203:12
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+cloneJSON@chrome://remote/content/marionette/json.sys.mjs:203:12
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+cloneJSON@chrome://remote/content/marionette/json.sys.mjs:203:12
+cloneObject/result&lt;@chrome://remote/content/marionette/json.sys.mjs:53:52
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:53:25
+cloneJSON@chrome://remote/content/marionette/json.sys.mjs:203:12
+json.clone@chrome://remote/content/marionette/json.sys.mjs:208:22
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:171:19
+</status>
+</test>
+<status status="FAIL" start="2024-07-15T15:55:59.847721" elapsed="35.732687"/>
+</suite>
+<status status="FAIL" start="2024-07-15T15:55:59.761950" elapsed="35.819455"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">@detik_get_1</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Detikcom">Tests.Detikcom</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

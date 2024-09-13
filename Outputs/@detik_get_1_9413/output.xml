@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-07-15T16:12:02.005562" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\BELAJAR AUTOMATION\web-automation\Tests">
+<suite id="s1-s1" name="Detikcom" source="D:\BELAJAR AUTOMATION\web-automation\Tests\detikcom.robot">
+<test id="s1-s1-t1" name="Scenario: Verify" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-15T16:12:02.356137" level="INFO">Opening browser 'chrome' to base url 'https://www.detik.com'.</msg>
+<msg time="2024-07-15T16:12:03.099387" level="WARN">The chromedriver version (121.0.6167.184) detected in PATH at C:\Python312\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.131); currently, chromedriver 122.0.6261.128 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${DETIK_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-15T16:12:02.356137" elapsed="37.227976"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-15T16:12:39.585114" elapsed="0.438367"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-15T16:12:45.024756" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-15T16:12:40.024478" elapsed="5.000278"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-15T16:12:45.025754" level="INFO">Typing text 'motor' into text field 'id:CityAjax'.</msg>
+<arg>id:CityAjax</arg>
+<arg>motor</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-15T16:12:45.024756" elapsed="0.928471"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-15T16:12:48.954095" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-15T16:12:45.953227" elapsed="3.000868"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-15T16:12:48.954095" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div/div/div[3]/div/div[2]/div[1]/div/form/button'.</msg>
+<msg time="2024-07-15T16:12:52.063591" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-15T16:12:52.064588" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="dtkframebar__icons dtkframebar__icons-search"&gt;&lt;/button&gt; is not clickable at point (738, 23). Other element would receive the click: &lt;div class="dropdown" id="dropdown-search" dtr-evt="search bar" dtr-sec="search" dtr-act="search" onclick="_pt(this)"&gt;...&lt;/div&gt;
+  (Session info: chrome=122.0.6261.131)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A6507012+3522402]
+	(No symbol) [0x00007FF6A6128352]
+	(No symbol) [0x00007FF6A5FD5ABB]
+	(No symbol) [0x00007FF6A6023390]
+	(No symbol) [0x00007FF6A60210D2]
+	(No symbol) [0x00007FF6A601E834]
+	(No symbol) [0x00007FF6A601D569]
+	(No symbol) [0x00007FF6A6011910]
+	(No symbol) [0x00007FF6A603F05A]
+	(No symbol) [0x00007FF6A601120A]
+	(No symbol) [0x00007FF6A603F270]
+	(No symbol) [0x00007FF6A605BDA3]
+	(No symbol) [0x00007FF6A603EE03]
+	(No symbol) [0x00007FF6A600F4D4]
+	(No symbol) [0x00007FF6A60105F1]
+	GetHandleVerifier [0x00007FF6A6539B9D+3730157]
+	GetHandleVerifier [0x00007FF6A658F02D+4079485]
+	GetHandleVerifier [0x00007FF6A65875D3+4048163]
+	GetHandleVerifier [0x00007FF6A625A649+718233]
+	(No symbol) [0x00007FF6A6134A3F]
+	(No symbol) [0x00007FF6A612FA94]
+	(No symbol) [0x00007FF6A612FBC2]
+	(No symbol) [0x00007FF6A611F2E4]
+	BaseThreadInitThunk [0x00007FFF05557344+20]
+	RtlUserThreadStart [0x00007FFF06F7CC91+33]
+</msg>
+<arg>xpath:/html/body/div[1]/div/div/div/div[3]/div/div[2]/div[1]/div/form/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-07-15T16:12:48.954095" elapsed="3.135425">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="dtkframebar__icons dtkframebar__icons-search"&gt;&lt;/button&gt; is not clickable at point (738, 23). Other element would receive the click: &lt;div class="dropdown" id="dropdown-search" dtr-evt="search bar" dtr-sec="search" dtr-act="search" onclick="_pt(this)"&gt;...&lt;/div&gt;
+  (Session info: chrome=122.0.6261.131)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A6507012+3522402]
+	(No symbol) [0x00007FF6A6128352]
+	(No symbol) [0x00007FF6A5FD5ABB]
+	(No symbol) [0x00007FF6A6023390]
+	(No symbol) [0x00007FF6A60210D2]
+	(No symbol) [0x00007FF6A601E834]
+	(No symbol) [0x00007FF6A601D569]
+	(No symbol) [0x00007FF6A6011910]
+	(No symbol) [0x00007FF6A603F05A]
+	(No symbol) [0x00007FF6A601120A]
+	(No symbol) [0x00007FF6A603F270]
+	(No symbol) [0x00007FF6A605BDA3]
+	(No symbol) [0x00007FF6A603EE03]
+	(No symbol) [0x00007FF6A600F4D4]
+	(No symbol) [0x00007FF6A60105F1]
+	GetHandleVerifier [0x00007FF6A6539B9D+3730157]
+	GetHandleVerifier [0x00007FF6A658F02D+4079485]
+	GetHandleVerifier [0x00007FF6A65875D3+4048163]
+	GetHandleVerifier [0x00007FF6A625A649+718233]
+	(No symbol) [0x00007FF6A6134A3F]
+	(No symbol) [0x00007FF6A612FA94]
+	(No symbol) [0x00007FF6A612FBC2]
+	(No symbol) [0x00007FF6A611F2E4]
+	BaseThreadInitThunk [0x00007FFF05557344+20]
+	RtlUserThreadStart [0x00007FFF06F7CC91+33]
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-07-15T16:12:52.089520" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id:kanal</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-15T16:12:52.089520" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-07-15T16:12:52.090518" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://*[@id="kanal"]/option[11]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-15T16:12:52.090518" elapsed="0.000000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>class:media__subtitle</arg>
+<arg>detikOto</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2024-07-15T16:12:52.090518" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-07-15T16:12:52.090518" elapsed="0.000000"/>
+</kw>
+<tag>@detik_get_1</tag>
+<status status="FAIL" start="2024-07-15T16:12:02.354144" elapsed="49.737372">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="dtkframebar__icons dtkframebar__icons-search"&gt;&lt;/button&gt; is not clickable at point (738, 23). Other element would receive the click: &lt;div class="dropdown" id="dropdown-search" dtr-evt="search bar" dtr-sec="search" dtr-act="search" onclick="_pt(this)"&gt;...&lt;/div&gt;
+  (Session info: chrome=122.0.6261.131)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A6507012+3522402]
+	(No symbol) [0x00007FF6A6128352]
+	(No symbol) [0x00007FF6A5FD5ABB]
+	(No symbol) [0x00007FF6A6023390]
+	(No symbol) [0x00007FF6A60210D2]
+	(No symbol) [0x00007FF6A601E834]
+	(No symbol) [0x00007FF6A601D569]
+	(No symbol) [0x00007FF6A6011910]
+	(No symbol) [0x00007FF6A603F05A]
+	(No symbol) [0x00007FF6A601120A]
+	(No symbol) [0x00007FF6A603F270]
+	(No symbol) [0x00007FF6A605BDA3]
+	(No symbol) [0x00007FF6A603EE03]
+	(No symbol) [0x00007FF6A600F4D4]
+	(No symbol) [0x00007FF6A60105F1]
+	GetHandleVerifier [0x00007FF6A6539B9D+3730157]
+	GetHandleVerifier [0x00007FF6A658F02D+4079485]
+	GetHandleVerifier [0x00007FF6A65875D3+4048163]
+	GetHandleVerifier [0x00007FF6A625A649+718233]
+	(No symbol) [0x00007FF6A6134A3F]
+	(No symbol) [0x00007FF6A612FA94]
+	(No symbol) [0x00007FF6A612FBC2]
+	(No symbol) [0x00007FF6A611F2E4]
+	BaseThreadInitThunk [0x00007FFF05557344+20]
+	RtlUserThreadStart [0x00007FFF06F7CC91+33]
+</status>
+</test>
+<status status="FAIL" start="2024-07-15T16:12:02.036513" elapsed="50.055999"/>
+</suite>
+<status status="FAIL" start="2024-07-15T16:12:02.007559" elapsed="50.085951"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">@detik_get_1</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Detikcom">Tests.Detikcom</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-07-15T16:12:03.099387" level="WARN">The chromedriver version (121.0.6167.184) detected in PATH at C:\Python312\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.131); currently, chromedriver 122.0.6261.128 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
